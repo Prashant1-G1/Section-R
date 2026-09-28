@@ -2,19 +2,145 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<<h1>>, initial-scale=1.0">
-    <title>Class-Room</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bipin Gyawali - Personal Portfolio</title>
 </head>
+
 <body>
-    <marquee bgcolor="yellow" behavior="alternate">Welcome to MIT college</marquee>
-    <h1>Prashant</h1>
-    <h2>Sulav</h2>
-    <h3>Utsav</h3>
-    <h4>Bipin</h4>
-    <h5>Saroj</h5>
-    <h6>Sudip</h6>
-    <font color="red">Suyal</font>
-    <br> H<sub>2</sub>0 <br>
-    a<sup>2</sup>-b<sup>2</sup>
+
+    <header>
+        <h1>Bipin Gyawali - Personal Portfolio</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Technical Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <img src="images/profile.jpg" alt="Profile photo of Bipin Gyawali">
+
+            <p>
+                Hello! My name is Bipin Gyawali. I am a student at MIT College, Nepal,
+                with a strong interest in technology and software development. I am
+                particularly interested in blockchain development and enjoy learning
+                about new technologies and programming concepts.
+            </p>
+
+            <p>
+                My current goal is to develop strong web development and coding skills
+                by working on practical projects and improving my understanding of
+                modern technologies. I am also interested in exploring blockchain
+                development as I continue to build my technical knowledge.
+            </p>
+        </section>
+
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <dl>
+                <dt>HTML5</dt>
+                <dd>Creating the structure and content of web pages using semantic HTML.</dd>
+
+                <dt>CSS</dt>
+                <dd>Basic knowledge of styling and designing web pages.</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Basic programming for adding interaction and functionality to websites.</dd>
+
+                <dt>Python</dt>
+                <dd>Programming and problem solving using Python.</dd>
+
+                <dt>C/C++</dt>
+                <dd>Understanding programming fundamentals and developing basic programs.</dd>
+
+                <dt>SQL</dt>
+                <dd>Working with databases and managing structured data.</dd>
+
+                <dt>Git and GitHub</dt>
+                <dd>Managing source code and maintaining software projects using version control.</dd>
+
+                <dt>Blockchain</dt>
+                <dd>Basic understanding of blockchain concepts and blockchain development.</dd>
+            </dl>
+        </section>
+
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <article>
+                <h3>Hospital Management System</h3>
+
+                <p>
+                    The Hospital Management System is a project designed to manage
+                    important hospital information in an organized way. It can be
+                    used to manage patient records, doctor information, appointments,
+                    and other basic hospital-related information. This project helped
+                    me improve my programming, data management, and problem-solving skills.
+                </p>
+
+                <a href="#">Click here to view Hospital Management System Repository</a>
+            </article>
+
+
+            <article>
+                <h3>Traffic Fine Management System</h3>
+
+                <p>
+                    The Traffic Fine Management System is a project developed to manage
+                    traffic violations and fine records. It helps organize information
+                    about traffic offences, vehicles, and fines. Working on this project
+                    helped me understand programming logic, record management, and how
+                    software can be used to solve practical problems.
+                </p>
+
+                <a href="#">Click here to view Traffic Fine Management System Repository</a>
+            </article>
+        </section>
+
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+                </p>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Bipin Gyawali. All rights reserved.</p>
+        <p>Personal Portfolio created using semantic HTML5 without CSS.</p>
+    </footer>
+
 </body>
 </html>
