@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            background-color: red;
+            padding: 24px;
+            border: 1px solid black;
+        }
+        #div2{
+            background-color:yellow;
+            padding: 18px;
+            border: 1px solid black;
+        }
+        #div3{
+            background-color: orange;
+
+            border: 1px solid black;
+          
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="div1">
+                Dear Students
+                <div id="div2">
+                        Mit Students
+                        <div id="div3">
+                            Kamaladi
+                        </div>
+                </div>
+    </div>
+
+    <script>
+
+        let div1=document.querySelector("#div1");
+        let div2=document.querySelector("#div2");
+        let div3=document.querySelector("#div3");
+        
+        div1.addEventListener("click",function(event){
+            alert("component 1 is clicked");
+        });
+        div2.addEventListener("click",function(event){
+            alert("component 2 is clicked");
+        });
+        
+        div3.addEventListener("click",function(event){
+            alert("component 3 is clicked");
+        });
+        
+    </script>
+    
+</body>
+</html>

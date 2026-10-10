@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Form Validation with Addition_DOM</h2>
+
+    <form id="example">
+        <input type="text"  placeholder="Enter Principle" id="formInput">
+
+        <input type="text" placeholder="Enter Time" id="formInput2">
+
+        <input type="text" placeholder="Enter Rate" id="formInput3">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+
+        document.querySelector("#example").addEventListener("submit", (e) => {
+
+            let input1 = document.querySelector("#formInput");
+
+            let input2 = document.querySelector("#formInput2");
+
+            let input3 = document.querySelector("#formInput3");
+
+            if (!input1.value.trim()) {
+                e.preventDefault();
+                alert("First input cannot be empty");
+                input1.focus();
+                return;
+            }
+
+            if (!input2.value.trim()) {
+                e.preventDefault();
+                alert("Second input cannot be empty");
+                input2.focus();
+                return;
+            }
+
+            
+             if (!input3.value.trim()) {
+                e.preventDefault();
+                alert("Second input cannot be empty");
+                input2.focus();
+                return;
+            }
+
+           
+            e.preventDefault();
+
+            alert("Form submitted successfully!");
+
+            // Convert input values to numbers and add them
+            let result = (Number(input1.value) * Number(input2.value) * Number(input3.value)); 
+
+            alert("SI = " + result);
+
+        });
+
+    </script>
+
+</body>
+</html>
